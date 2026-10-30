@@ -1,0 +1,3 @@
+Tüm subfolderlar exclude edilmiştir. Aşağıdaki komut çalıştırıldığında force komutu olduğundan lütfen path seçiminde dikkat ediliz!
+
+Get-ChildItem –Path "c:\temp\1\" -Recurse | Where-Object {($_.LastWriteTime -lt (Get-Date).AddDays(-3))} |  where { $_.GetType().Name -eq "FileInfo" } | Remove-item -Force
