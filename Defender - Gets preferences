@@ -1,0 +1,13 @@
+Get-MpPreference
+Get-MpComputerStatus
+Get-MDEAgentStatus
+sc query sense
+sc qc diagtrack
+
+#AD jonin status
+dsregcmd /status
+
+Admin Portal Control
+https://security.microsoft.com/ > Devices
+Onboarding Status = Onboarded : AV Status
+Sensor Health Status = Active : EDR Status 
